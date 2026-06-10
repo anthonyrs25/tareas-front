@@ -140,3 +140,20 @@ body {
 .lista-tareas li button:hover {
   color: var(--acento);
 }
+
+.btn-tema {
+  margin-left: auto;
+  background: none;
+  border: 1px solid var(--borde);
+  color: var(--apagado);
+  padding: 0.3rem 0.8rem;
+  cursor: pointer;
+  font-family: inherit;
+  font-size: 0.75rem;
+  letter-spacing: 0.1em;
+}
+
+.btn-tema:hover {
+  border-color: var(--acento);
+  color: var(--acento);
+}
