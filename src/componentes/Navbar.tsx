@@ -12,6 +12,16 @@ export function Navbar() {
             document.documentElement.classList.remove('claro');
         }
     };
+    const [moderno, setModerno] = useState(false);
+    const toggleModerno = () => {
+      const nuevo = !moderno;
+      setModerno(nuevo);
+      if(nuevo) {
+        document.body.classList.add('moderno');
+      } else {
+        document.body.classList.remove('moderno');
+      }
+    };
 
   return (
     <nav className="navbar">
@@ -23,6 +33,9 @@ export function Navbar() {
       </NavLink>
       <button onClick={toggleTema} className='btn-tema'>
         {claro ? 'Oscuro' : 'Claro'}
+      </button>
+      <button onClick={toggleModerno} className='btn-tema'>
+        Moderno
       </button>
     </nav>
   );
