@@ -157,3 +157,12 @@ body {
   border-color: var(--acento);
   color: var(--acento);
 }
+
+body.moderno {
+  background: radial-gradient(at 0% 0%, #0f0c29 0%, transparent 60%),
+  radial-gradient(at 100% 0%, #302b63 0%, transparent 60%),
+  radial-gradient(at 100% 100%, #24243e 0%, transparent 60%),
+  radial-gradient(at 0% 100%, #0f0c29 0%, transparent 60%);
+  background-color: #0a0a0a;
+  min-height: 100vh;
+}
